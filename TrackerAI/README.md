@@ -1,66 +1,12 @@
-## Foundry
+- stored private key with `cast wallet import [Name] --interactive`
+- deployed contract with forge `forge script script/TrackerAIScript.s.sol --rpc-url $RPC --private-key $PK --broadcast --verify --etherscan-api-key $ETHAPIKEY -vvvv`
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# USEFUL
 
-Foundry consists of:
+- `forge script script/TrackerAIScript.s.sol --rpc-url $BNB_TESTNET_RPC --private-key $PRIVATE_KEY--broadcast --verify --etherscan-api-key $BSC_API_KEY -vvvv`
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- `forge script script/TrackerAIScript.s.sol --rpc-url $ETH_MAINNET_RPC --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETH_API_KEY -vvvv `
+- `cast send ca "enableTrade()" --rpc-url $BNB_TESTNET_RPC --private-key $PRIVATE_KEY`
+- `cast send ca "disableSizeLimits()" --rpc-url $BNB_TESTNET_RPC --private-key $PRIVATE_KEY`
+- `cast send ca "<function>" "<argument1>" "<argument2>" ... --rpc-url <network_url>`
+- `cast 4byte-decode [data]`
