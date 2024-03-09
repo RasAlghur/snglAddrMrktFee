@@ -1,0 +1,3 @@
+[submodule "TrackerAI/lib/forge-std"]
+	path = TrackerAI/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
